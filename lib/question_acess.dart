@@ -7,11 +7,17 @@ class QuestionAcess {
   int _questionNumber = 0;
   bool flag = true;
   final List<QueAns> _questionBank = [
-    QueAns('questionText1', false),
-    QueAns('questionText2', true),
-    QueAns('questionText3', true),
-    QueAns('questionText4', false),
-    QueAns('questionText5', true),
+    QueAns('Sharks are mammals.', false),
+    QueAns(
+        'Sea otters have a favorite rock they use to break open food.', true),
+    QueAns('The blue whale is the biggest animal to have ever lived.', true),
+    QueAns('The hummingbird egg is the world\'s smallest bird egg.', true),
+    QueAns('Pigs roll in the mud because they don’t like being clean.', false),
+    QueAns('Bats are blind.', false),
+    QueAns('A dog sweats by panting its tongue.', false),
+    QueAns('It takes a sloth two weeks to digest a meal.', true),
+    QueAns('The largest living frog is the Goliath frog of West Africa.', true),
+    QueAns('An ant can lift 1,000 times its body weight.', false),
   ];
 
   void getNextQuestion(bool ans) {
