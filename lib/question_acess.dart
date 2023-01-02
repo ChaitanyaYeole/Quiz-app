@@ -5,7 +5,6 @@ Check check = Check();
 
 class QuestionAcess {
   int _questionNumber = 0;
-  bool flag = true;
   final List<QueAns> _questionBank = [
     QueAns('Sharks are mammals.', false),
     QueAns(
@@ -20,13 +19,15 @@ class QuestionAcess {
     QueAns('An ant can lift 1,000 times its body weight.', false),
   ];
 
-  void getNextQuestion(bool ans) {
-    check.checkIt(ans, flag);
+  bool getNextQuestion(bool ans) {
+    check.checkIt(ans);
     if (_questionNumber < _questionBank.length - 1) {
       _questionNumber++;
     } else {
-      flag = false;
+      _questionNumber = 0;
+      return false;
     }
+    return true;
   }
 
   String getQuestion() {

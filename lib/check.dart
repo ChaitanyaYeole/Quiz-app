@@ -3,15 +3,15 @@ import 'package:quizee/main.dart';
 
 class Check {
   List<Icon> check = [];
-  void checkIt(bool ans, bool flag) {
-    if (questionAcess.getAnswer() == ans && flag == true) {
+  void checkIt(bool ans) {
+    if (questionAcess.getAnswer() == ans) {
       check.add(
         const Icon(
           Icons.check,
           color: Colors.green,
         ),
       );
-    } else if (flag == true) {
+    } else {
       check.add(
         const Icon(
           Icons.close,

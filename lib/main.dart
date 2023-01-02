@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 import 'question_acess.dart';
 
 QuestionAcess questionAcess = QuestionAcess();
 
-void main() => runApp(const MyApp());
+void main() => runApp(const MaterialApp(home: MyApp()));
 
 bool flag = true;
 
@@ -19,7 +20,31 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   void nextQue(bool ans) {
     setState(() {
-      questionAcess.getNextQuestion(ans);
+      if (questionAcess.getNextQuestion(ans) == false) {
+        Alert(
+          context: context,
+          title: "Questions are finished",
+          desc: "Press restart quiz",
+          style: const AlertStyle(
+            isCloseButton: false,
+            isOverlayTapDismiss: false,
+          ),
+          buttons: [
+            DialogButton(
+              onPressed: () {
+                Navigator.pop(context);
+                setState(() {
+                  check.check = List.empty(growable: true);
+                });
+              },
+              child: const Text(
+                "Restart",
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+            )
+          ],
+        ).show();
+      }
     });
   }
 
