@@ -1,5 +1,6 @@
+![quizee app baner](https://user-images.githubusercontent.com/69446108/217694181-591ac429-49c9-42c5-af25-2e89f566520d.png)
 
-# My choice app
+# Quizee
 This is a flutter project which can be used at multiple platforms applications like Android app, Mac app and web-based applications.
 This project is a quiz app that tests your general knowledge. As one of the most popular types of apps on the app stores, you can create your own quiz for other people as you need!
 
@@ -8,6 +9,7 @@ This project is a quiz app that tests your general knowledge. As one of the most
 
 ## User Interface
 
+[quizeeApp.webm](https://user-images.githubusercontent.com/69446108/217694307-1f17a223-5259-48a9-96fe-4c157f9ad953.webm)
 
 ## Learnings throughout project
 
