@@ -42,7 +42,7 @@ This project is a quiz app that tests your general knowledge. As one of the most
 
 
 
-[![portfolio](https://img.shields.io/badge/Github-000?style=for-the-badge&logo=github&logoColor=white)](https://katherineoelsner.com/)
+[![github](https://img.shields.io/badge/Github-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ChaitanyaYeole)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/chaitanyayeole7)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chaitnyayeole/)
 
